@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="peli.css">
+
+        <!--Font tag-->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">  
+
+                <title>VM Sports® - Fattlefield™</title>
+</head>
+
+<body>
+
+    <div id="videocontainer">
+            <video id="video" autoplay="" loop="">
+                <source type="video/mp4" src="video/fattlefield.mp4">   
+            </video>
+    </div>
+
+    <div id="mobile">
+        <img id="woman" alt="playable object" src="kuva/war4.png">
+    </div>
+
+
+    <div id="header">
+        <div class="topnav" id="myTopnav">
+                <a href="index.html" id="logohead" class="active"><img src="kuva/logohead.png" alt="vmgames"></a>
+                
+                <div class="dropdown">
+                        <button class="dropbtn">GAMES
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="fattlefield.html">Fattlefield</a>
+                            <a href="underwaterrugby.html">Underwater Rugby League</a>
+                            <a href="dadwars.html">Dad Wars</a>
+                            <a href="thepimp.html">The Pimp</a>
+                            <a href="needforweed.html">Need For Weed</a>
+                        </div>
+                      </div>
+
+                <a href="uutiset.html">NEWS</a>
+
+                <a href="about.html">ABOUT</a>
+
+                <a href="kauppa.html" id="kauppa">STORE</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveSize()">&#9776;</a>
+        </div> 
+    </div>
+
+    <div id="ghost"></div>
+
+    <div id="itemcontainer">
+        <div id="spacersplash"></div>
+
+        <img id="fattlefieldlogo" alt="Fattlefield" src="kuva/fattlefield.png">
+
+        <div id="fattlefieldsplash">
+            <h3>WELCOME TO THE HEAVY NEW EXPERIENCE</h3>
+        </div>
+    </div>
+
+    <div id="gamefacts">
+        <h3 class="facthead">
+            
+            A new generation of destruction and weight, with never seen before accuracy
+        </h3>
+
+        <div id="factmain">
+
+            <img id="fact1" alt="fattlefield toimintaa" src="kuva/war1.jpg">
+
+            <h3 class="facttext">
+                    Join the fields, with fattlefields. New kind of experience, from the development team VM. New modes (like Battle Royale), will keep you
+                    entertained for months.
+                    In Fattlefields, you take control of an father, ready to go on war with other fathers.
+            </h3>
+        </div>
+
+        <div id="factsecond">
+            <div id="smalltext1">
+                <img class="fact2" alt="fattlefield toimintaa" src="kuva/war2.jpg">
+                <h3 class="facttext">Choose your character from the heavy roster. Includes 10 base characters, and 40+ more with an additonal DLC purchase.</h3>
+            </div>
+
+            <div class="smalltext2">
+                <img class="fact2" alt="fattlefield toimintaa" src="kuva/war3.jpg">
+                <h3 class="facttext">
+                Use brand new XXL-sized vehicles, that cause mayhem around the fields</h3>
+            </div>
+        </div>
+
+        <div id="factthird">
+                <h3 class="facthead">
+                        
+                        The biggest multiplayer maps ever seen in the franchise. Topped down with new equipments!
+                </h3>
+                
+                <img id="fact3" alt="fattlefield toimintaa" src="kuva/war5.png">
+        
+                <h3 class="facttext">
+                        - new multiplayer maps for the largest battle ever in the history of fattlefield<br>
+                        - Base cast of 10 characters, 2 vehicles and over 10 guns<br>
+                        - with DLC, unlock the M.O.T.H.E.R. mode. Go against your arch-nemesis, your wife<br>
+                </h3>
+        </div>
+
+        <div id="buynow">
+            <a id="buybutton" href="kauppa.html">
+                <p id="buy">BUY NOW</p>
+            </a>
+        </div>
+    </div>
+    
+    <div id="footer">
+                                        
+        <div id="adv">
+                <a href="kauppa.html"><img class="ffad" src="kuva/ad1.png" alt="all new dlc for fattlefield now available"></a>
+        </div>
+
+        <div id="advmobile">
+            <a href="kauppa.html"><img class="ffad" src="kuva/ad1mobile.png" alt="all new dlc for fattlefield now available"></a>
+        </div>
+
+        <div id="bottom">
+            <div id="social">
+                <a class="socialimg" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/facebook.png" alt="facebook"></a>
+                <a class="socialimg" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/twitter.png" alt="twitter"></a>
+                <a class="socialimg" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/insta.png" alt="instagram"></a>
+                <p>Connect with us now!</p>
+            </div>
+
+            <div id="legal">
+                
+                <p>VM Sports® 2018</p>
+            </div>
+    </div>
+    </div>
+
+    <script>
+        function responsiveSize() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                document.getElementById("kauppa").style.float = "left";
+            } else {
+                x.className = "topnav";
+                document.getElementById("kauppa").style.float = "";
+            }
+        }
+    </script>
+</body>

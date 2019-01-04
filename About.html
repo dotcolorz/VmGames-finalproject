@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> VM Sports® - ABOUT</title>
+        <link rel="shortcut icon" type="image/png" href="kuva/favicon.png"/>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="Abouttheme.css">
+
+        <!--Font tag-->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+        
+</head>
+<body>
+        
+
+        <div id="header">
+        <div class="topnav" id="myTopnav">
+                <a href="index.html" id="logohead" class="active"><img src="kuva/logohead.png" alt="vmgames"></a>
+                
+                <div class="dropdown">
+                        <button class="dropbtn">GAMES
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="fattlefield.html">Fattlefield</a>
+                          <a href="underwaterrugby.html">Underwater Rugby League</a>
+                          <a href="dadwars.html">Dad Wars</a>
+                          <a href="thepimp.html">The Pimp</a>
+                          <a href="needforweed.html">Need For Weed</a>
+                        </div>
+                      </div>
+
+                <a href="uutiset.html">NEWS</a>
+
+                <a href="about.html">ABOUT</a>
+
+                
+
+                <a href="kauppa.html" id="kauppa">STORE</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveSize()">&#9776;</a>
+        </div> 
+    </div>
+
+    <div id="ghost"></div>
+    <div id="logosplash">
+        <img id="logo" src="kuva/logo.png" alt="vm">
+    </div>
+    <div class="quote">
+    <h1>"Money is everything that I need. I don't need anything else, because I can just buy it.</h1>
+    <p>-Some radom dude called Matias</p>
+    </div>
+
+    <div class="flex-container">
+        <div class="aboutcard">
+        <h1>MATIAS</H1>
+        <img class="profiili" src="kuva/matias.jpg" alt="matias">
+        <p>Matias is one of the founders of VM Sports (Virtual Marks). Matias is a very energetic person, whoam likes to work with games and with people
+         (with the money, of coures).
+        Beginning from a young age, Matias strived to get recognition, by making games.
+       His vision is simple; to make money with DLC!
+        </p><br>
+
+        <h1>"You should never give up on your dreams. Especially, if it involves money"</h1>
+        
+        </div>
+
+
+        <div class="aboutcard">
+        <h1>VALTTERI</H1>
+        <img class="profiili" src="kuva/valtteri.jpg" alt="valtteri">
+        <p>The Co-Founder of VM. Valtteri is the brains of the company, making all the marketing choices. He loves games, and likes money. Just like Matias!
+        He wants to take the company to next levels, asking for more money from player, so they can unlock more content. Valtteri is also the inventor of loot box system.
+        </p><br>
+
+        <h1>"Loot boxes are the cherry on top of the game. Nothing else really matters."</h1>
+        
+        </div>
+
+    
+    
+    </div>
+    <div id="bottom">
+        <div id="social">
+            <a class="socialimg" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/facebook.png" alt="facebook"></a>
+            <a class="socialimg" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/twitter.png" alt="twitter"></a>
+            <a class="socialimg" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/insta.png" alt="insta"></a>
+            <p>Connect with us now!</p>
+        </div>
+
+        <div id="legal">
+            <p>VM Sports® 2018</p>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function responsiveSize() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+document.getElementById("kauppa").style.float = "left";
+} else {
+x.className = "topnav";
+document.getElementById("kauppa").style.float = "";
+}
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+content.style.maxHeight = null;
+} else {
+content.style.maxHeight = content.scrollHeight + "px";
+} 
+});
+}
+
+function activateFf(){
+document.getElementById("ffteksti").style.visibility = "visible";
+}
+
+function disableFf(){
+document.getElementById("ffteksti").style.visibility = "hidden";
+}
+
+function activateUrl(){
+document.getElementById("urlteksti").style.visibility = "visible";
+}
+
+function disableUrl(){
+document.getElementById("urlteksti").style.visibility = "hidden";    
+}
+
+function activateDw(){
+document.getElementById("dwteksti").style.visibility = "visible";
+}
+
+function disableDw(){
+document.getElementById("dwteksti").style.visibility = "hidden";    
+}
+
+function activateTp(){
+document.getElementById("tpteksti").style.visibility = "visible";
+}
+
+function disableTp(){
+document.getElementById("tpteksti").style.visibility = "hidden";    
+}
+
+function activateNfw(){
+document.getElementById("nfwteksti").style.visibility = "visible";
+}
+
+function disableNfw(){
+document.getElementById("nfwteksti").style.visibility = "hidden";    
+}
+
+</script>

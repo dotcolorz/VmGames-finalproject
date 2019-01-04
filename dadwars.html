@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="peli.css">
+
+        <!--Font tag-->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">  
+
+                <title>VM Sports® - Dad wars: Drunkenfront™</title>
+</head>
+
+<body>
+
+    <div id="videocontainer">
+        <img id="woman" alt="playable object" src="kuva/dadwarssplash.png">
+    </div>
+
+    <div id="mobile">
+        <img id="woman" alt="playable object" src="kuva/dadwarssplash.png">
+    </div>
+
+
+    <div id="header">
+        <div class="topnav" id="myTopnav">
+                <a href="index.html" id="logohead" class="active"><img src="kuva/logohead.png" alt="vmgames"></a>
+                
+                <div class="dropdown">
+                        <button class="dropbtn">GAMES
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="fattlefield.html">Fattlefield</a>
+                          <a href="underwaterrugby.html">Underwater Rugby League</a>
+                          <a href="dadwars.html">Dad Wars</a>
+                          <a href="thepimp.html">The Pimp</a>
+                          <a href="needforweed.html">Need For Weed</a>
+                        </div>
+                      </div>
+
+                <a href="uutiset.html">NEWS</a>
+
+                <a href="about.html">ABOUT</a>
+
+                
+
+                <a href="kauppa.html" id="kauppa">STORE</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveSize()">&#9776;</a>
+        </div> 
+    </div>
+
+    <div id="ghost"></div>
+
+    <div id="itemcontainer">
+        <div id="spacersplash"></div>
+
+        <img id="fattlefieldlogo" alt="Fattlefield" src="kuva/dw.png">
+
+        <div id="fattlefieldsplash">
+            <h3>COMING SOON</h3>
+        </div>
+    </div>
+
+    <div id="gamefacts">
+
+    <div id="footer">
+                                        
+        <div id="adv">
+                <a href="kauppa.html"><img class="ffad" src="kuva/ad1.png" alt="all new dlc for fattlefield now available"></a>
+        </div>
+
+        <div id="advmobile">
+            <a href="kauppa.html"><img class="ffad" src="kuva/ad1mobile.png" alt="all new dlc for fattlefield now available"></a>
+        </div>
+
+        <div id="bottom">
+            <div id="social">
+                <a class="socialimg" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/facebook.png" alt="facebook"></a>
+                <a class="socialimg" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/twitter.png" alt="twitter"></a>
+                <a class="socialimg" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img class="sc" src="kuva/insta.png" alt="instagram"></a>
+                <p>Connect with us now!</p>
+            </div>
+
+            <div id="legal">
+                
+                <p>VM Sports® 2018</p>
+            </div>
+    </div>
+    </div>
+
+    <script>
+        function responsiveSize() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                document.getElementById("kauppa").style.float = "left";
+            } else {
+                x.className = "topnav";
+                document.getElementById("kauppa").style.float = "";
+            }
+        }
+    </script>
+</body>
